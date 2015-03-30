@@ -203,5 +203,6 @@ if __name__ == '__main__':
 		n = get_num_controllers()
 		for c in range(1,n+1):
 	    		print cmk_info(c)
+	    	os.remove("./UcliEvt.log")
 	else:
 		print "3 No_arcconf_Found - UNKNOWN (No arcconf binary Found or no Adaptec Controller present (remove check from local checks))"
